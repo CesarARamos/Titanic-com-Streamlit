@@ -4,6 +4,7 @@ import altair as alt
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import io
 
 vcolor2 = sns.color_palette("Set2")
 vcolor = sns.color_palette("Paired")
@@ -148,7 +149,7 @@ def main():
     Child (Criança) = filha, filho, enteada, enteado
     Algumas crianças viajaram apenas com uma babá, portanto, parch = 0 para elas.
     '''
-
+    st.set_option('deprecation.showfileUploaderEncoding', False)
     file  = st.file_uploader('Selecione o dataset do Titanic para as observações (.csv)', type = 'csv')
     if file is not None:
         df = pd.read_csv(file)
