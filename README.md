@@ -1,4 +1,4 @@
-# Titanic-com-Streamlit
+# Titanic com Streamlit
 Análise de Dados com Python
 
 INSTRUÇÕES PARA UTILIZAÇÃO DO APP TITANIC:
